@@ -17,7 +17,7 @@ arcpy.env.workspace = workspace
 arcpy.AddMessage(f"Workspace set to {workspace}")
 
 # Define paths for intermediate outputs
-correctedDEM = os.path.join(workspace, "correctedDEM.tif") # hier noch überall die paths hinzufügen
+correctedDEM = os.path.join(workspace, "correctedDEM.tif")
 flow_direction = os.path.join(workspace, "flowDirection.tif")
 flow_acc = os.path.join(workspace, "flowAcc.tif")
 slope_path = os.path.join(workspace, "slope.tif")
@@ -64,7 +64,7 @@ arcpy.AddMessage("Streams extracted.")
 # Calculate DTW by executing the 'Accumulated Cost' tool from SAGA GIS
 arcpy.AddMessage("Start calculating Depth-to-Water...")
 
-# Define command where SAGA CMD runs in the background
+# Define SAGA command
 saga_command = [
     saga_cmd_path,
     "grid_analysis",                        # library
@@ -75,7 +75,7 @@ saga_command = [
     "-ACCUMULATED", accumulated_cost_path   # output
 ]
 
-# Execute command
+# Execute command that runs in the background
 subprocess.run(saga_command, creationflags=subprocess.CREATE_NO_WINDOW)
 
 # Scale the accumulated cost raster to meters to represent DTW
@@ -85,7 +85,7 @@ DepthToWater.save(output_layer)
 # Aggregate DTW in hexagons if provided by the user
 if hexagons:
 
-    # Create variables for the output path and basename and change output name of aggregated raster
+    # Create variables for the output path and basename
     output_dir = os.path.dirname(output_layer)
     output_filename = os.path.basename(output_layer)
 
