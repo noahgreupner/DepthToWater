@@ -1,5 +1,5 @@
 # An ArcGIS Toolbox for Depth-to-Water Index Calculation
-This tool calculates the (cartographic) Depth-to-Water (DTW) index, representing the simulated vertical difference (metres) between a landscape cell and the nearest surface water cell along the least-cost slope path. DTW is commonly used for soil wetness modelling and identifying areas of high or low probability of water accumulation, which can be useful for hydrologic modelling, environmental planning and landscape monitoring. 
+This tool is the first openly-accessible tool that calculates the (cartographic) Depth-to-Water (DTW) index, representing the simulated vertical difference (metres) between a landscape cell and the nearest surface water cell along the least-cost slope path. DTW is commonly used for soil wetness modelling and identifying areas of high or low probability of water accumulation, which can be useful for hydrologic modelling, environmental planning and landscape monitoring. 
 
 It is not necessary to download the *DepthToWater.py* script, as it is automatically implemented in the .atbx toolbox.
 
