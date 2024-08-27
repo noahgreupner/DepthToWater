@@ -9,7 +9,7 @@ Consult the User Manual for more detailed information.
 ## Usage
 This toolbox has a GNU GPL license and is open for public use and distribution. Users are encouraged to use, share and further enhance the tool according to their needs. However, when sharing, modifying or citing the tool, please give an appropriate credit to the original creator according to the following:
 
-*Greupner, N. (2024): DepthToWater. An ArcGIS Pro toolbox for Depth-to-Water index calculation. University of Salzburg. Available at: https://zenodo.org/doi/10.5281/zenodo.13381566*.  
+*Noah Greupner (2024). An ArcGIS Toolbox for Depth-to-Water Index Calculation (1.0). Zenodo. https://doi.org/10.5281/zenodo.13381567*.  
 
 ## Prerequisites 
 - ArcGIS Pro: The tool is designed to be used within ArcGIS Pro. The Spatial Analyst extension is required for executing the tool. As it was implemented in ArcGIS Pro 3.3.0, there might be compatibility issues in other versions of the software.
